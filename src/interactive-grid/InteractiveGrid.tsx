@@ -52,7 +52,6 @@ export const InteractiveGrid: FC<InteractiveGridProps> = ({
 
     grid.removeAll(false);
 
-    // Добавляем виджеты на сетку
     widgets.forEach(({ id }) => {
       const element = refs.current[id]?.current;
       if (element) {
@@ -60,7 +59,6 @@ export const InteractiveGrid: FC<InteractiveGridProps> = ({
       }
     });
 
-    // Обновляем позиции, если массив positions не undefined
     positions?.forEach(({ id, x, y, w, h }) => {
       const element = refs.current[id]?.current;
       if (element) {
