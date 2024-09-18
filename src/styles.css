@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    min-height: 100vh;
+    background-color: #141313;
+    color: rgb(240, 240, 240);
+}
+
+.item {
+    background-color: lightcoral;
+    width: 100%;
+    height: 100%;
+}
